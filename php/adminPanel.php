@@ -8,6 +8,44 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <body>
-
+<div class="jumbotron" style="background:url('../images/hospital.jpeg') no-repeat;background-size: cover;height: 250px;"></div>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-3">
+			<div class="list-group">
+				<a href="" class="list-group-item" style="background-color: #3498DB;color: #ffffff;">Pateints</a>
+				<a href="" class="list-group-item">pateint Details</a>
+				<a href="" class="list-group-item">Add New Pateint</a>
+				<a href="" class="list-group-item">Payment / Checkout</a>
+			</div>
+			<hr>
+			<div class="list-group">
+				<a href="" class="list-group-item" style="background-color: #3498DB;color: #ffffff;">Staff</a>
+				<a href="" class="list-group-item">Staff Details</a>
+				<a href="" class="list-group-item">Add new Staff</a>
+				<a href="" class="list-group-item">Remove Staff Member</a>
+			</div>
+		</div>
+		<div class="col-md-8">
+			<div class="card">
+				<div class="card-body" style="background-color: #3498DB;color: #ffffff;"></div>
+				<div class="card-body">
+					<form class="form-group" action="func.php" method="post">
+						<label>First Name :</label>
+						<input type="text" name="fname" class="form-control"><br>
+						<label>Last Name :</label>
+						<input type="text" name="lname" class="form-control"><br>
+						<label>Email :</label>
+						<input type="text" name="email" class="form-control"><br>
+						<label>Contact :</label>
+						<input type="text" name="contact" class="form-control"><br>
+						<label>Doctor Appoitment :</label>
+						<input type="text" name="fname" class="form-control"><br>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>	
+</div>
 </body>
 </html>
