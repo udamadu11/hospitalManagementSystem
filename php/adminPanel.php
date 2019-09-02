@@ -42,11 +42,11 @@
 						<label>Contact :</label>
 						<input type="text" name="contact" class="form-control"><br>
 						<label>Doctor Appoitment :</label>
-						<select>
-							<option value="Dr AA From 6pm to 8pm">Dr AA</option>
-							<option value="Dr AA From 4pm to 8pm">Dr BB</option>
+						<select class="form-control" name="appoitment">
+							<option value="Dr AA From 6pm to 8pm">Dr AA From 4pm to 8pm</option>
+							<option value="Dr BB From 4pm to 8pm">Dr BB From 4pm to 8pm</option>
 						</select><br>
-						<input type="submit" name="submit" value="Enter Appoitment">
+						<input type="submit"class="btn btn-primary" name="submit" value="Enter Appoitment">
 					</form>
 				</div>
 			</div>
