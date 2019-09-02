@@ -28,7 +28,9 @@
 		</div>
 		<div class="col-md-8">
 			<div class="card">
-				<div class="card-body" style="background-color: #3498DB;color: #ffffff;"></div>
+				<div class="card-body" style="background-color: #3498DB;color: #ffffff;">
+					<h3>Book An Appoitment</h3>
+				</div>
 				<div class="card-body">
 					<form class="form-group" action="func.php" method="post">
 						<label>First Name :</label>
@@ -40,7 +42,11 @@
 						<label>Contact :</label>
 						<input type="text" name="contact" class="form-control"><br>
 						<label>Doctor Appoitment :</label>
-						<input type="text" name="fname" class="form-control"><br>
+						<select>
+							<option value="Dr AA From 6pm to 8pm">Dr AA</option>
+							<option value="Dr AA From 4pm to 8pm">Dr BB</option>
+						</select><br>
+						<input type="submit" name="submit" value="Enter Appoitment">
 					</form>
 				</div>
 			</div>
