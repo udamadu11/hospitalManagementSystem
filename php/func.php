@@ -10,6 +10,7 @@ if (isset($_POST['submit'])) {
 	$result = mysqli_query($con,$query);
 	if ($result) {
 		echo "<script>alert('Appoitment Registered')</script>";
+		echo "<script>window.open('adminPanel.php','_self')</script>";
 	}
 }
 
