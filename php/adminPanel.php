@@ -14,7 +14,7 @@
 		<div class="col-md-3">
 			<div class="list-group">
 				<a href="" class="list-group-item" style="background-color: #3498DB;color: #ffffff;">Pateints</a>
-				<a href="" class="list-group-item">pateint Details</a>
+				<a href="pateintDetails.php" class="list-group-item">pateint Details</a>
 				<a href="" class="list-group-item">Add New Pateint</a>
 				<a href="" class="list-group-item">Payment / Checkout</a>
 			</div>
