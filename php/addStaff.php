@@ -13,7 +13,7 @@
 	<div class="container">
 	<div class="col-md-8">
 			<div class="card">
-				<div class="card-body" style="background-color: #3498DB;color: #ffffff;">
+				<div class="card-body" style="background-color: #052C34;color: #ffffff;">
 					<div class="row">
 				<div class="col-md-2">
 					<a href="adminPanel.php" class="btn btn-light">Back</a>

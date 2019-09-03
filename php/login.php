@@ -14,7 +14,7 @@
 		
 		<div class="col-md-8">
 			<div class="card">
-				<div class="card-body" style="background-color: #3498DB;color: #ffffff;">
+				<div class="card-body" style="background-color:#052C34;color: #ffffff;">
 					<h3>Login Here</h3>
 				</div>
 				<div class="card-body">
