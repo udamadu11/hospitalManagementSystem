@@ -1,39 +1,45 @@
 <!DOCTYPE html>
-<?php include('include/connection.php') ?>
 <html>
 <head>
-	<title>login to Hospital</title>
+	<title>Admin Panel</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <body>
-	<form method="post">
-		<input type="text" name="username" placeholder="username" required>
-		<input type="email" name="email" placeholder="email" required>
-		<input type="number" name="phone" placeholder="Phone Number" required>
-		<input type="password" name="password" placeholder="password" required>
-		<input type="password" name="Cpassword" placeholder="Confirm password" required>
-		<input type="submit" name="submit" value="Sign Up">
-
-		<?php
-
-			if (isset($_POST['submit'])) {
-					$username = $_POST['username'];
-					$email = $_POST['email'];
-					$phone = $_POST['phone'];
-					$password = $_POST['password'];
-					$Cpassword = $_POST['Cpassword'];
-
-				if ($password == $Cpassword) {
-					$query = "INSERT INTO users(username,email,phone,password)VALUES('$username','$email','$phone','$password')";
-					$runQuery = mysqli_query($con,$query);
-					echo "<script>alert('Regisration Success!')</script>";
-				}
-					
-				else{
-					echo "<script>alert('password not match!')</script>";
-				}
-				
-			}
-		?>
-	</form>
+<div class="jumbotron" style="background:url('../images/hospital.jpeg') no-repeat;background-size: cover;height: 250px;"></div>
+<div class="container-fluid">
+	<div class="row">
+		
+		<div class="col-md-8">
+			<div class="card">
+				<div class="card-body" style="background-color: #3498DB;color: #ffffff;">
+					<h3>Login Here</h3>
+				</div>
+				<div class="card-body">
+					<form class="form-group" method="post">
+						<label>Email :</label>
+						<input type="text" name="email" class="form-control" required><br>
+						<label>Password :</label>
+						<input type="text" name="password" class="form-control" required><br>
+						<input type="submit"class="btn btn-primary" name="submit" value=" Login">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>	
+</div>
 </body>
 </html>
+<?php
+	include('connection.php');
+	if (isset($_POST['submit'])) {
+		$email = $_POST['email'];
+		$password = $_POST['password'];
+		$query = "SELECT * FROM users WHERE email ='$email' AND password ='$password'";
+		$result = mysqli_query($con,$query);
+		header('Location:adminPanel.php');
+	}
+
+ ?>
