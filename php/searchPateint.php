@@ -44,7 +44,7 @@ if (isset($_POST['submit'])) {
             $contact = $_POST['search'];
             $query2 = "SELECT * FROM appoitment WHERE contact = '$contact'";
             $result2 = mysqli_query($con,$query2);
-
+         if (mysqli_num_rows($result2) > 0) {
             while ($row = mysqli_fetch_array($result2)) {
             echo "
                <tr>
@@ -58,7 +58,11 @@ if (isset($_POST['submit'])) {
 
             ";
          }
-         }
+      }else{
+         echo "<script>alert('Invalid Contact number !')</script>";
+         echo "<script>window.open('pateintDetails.php','_self')</script>";
+      }
+   }
 ?>
 
   </tbody>
