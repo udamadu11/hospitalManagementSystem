@@ -53,5 +53,20 @@
 		</div>
 	</div>	
 </div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8.17.1/dist/sweetalert2.all.min.js"></script>
+   <script type="text/javascript">
+    $(document).ready(function(){
+     Swal.fire({
+        title: 'Welcome Back!!',
+        text: 'Admin.....',
+        imageUrl: '../images/me.jpg',
+        imageWidth: 400,
+        imageHeight: 200,
+        imageAlt: 'Custom image',
+        animation: false
+})
+    })
+     
+   </script>
 </body>
 </html>
