@@ -21,7 +21,7 @@
 			<hr>
 			<div class="list-group">
 				<a href="" class="list-group-item" style="background-color: #3498DB;color: #ffffff;">Staff</a>
-				<a href="" class="list-group-item">Staff Details</a>
+				<a href="staffDetails.php" class="list-group-item">Staff Details</a>
 				<a href="addStaff.php" class="list-group-item">Add new Staff</a>
 				<a href="" class="list-group-item">Remove Staff Member</a>
 			</div>
