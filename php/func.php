@@ -11,6 +11,8 @@ if (isset($_POST['submit'])) {
 	if ($result) {
 		echo "<script>alert('Appoitment Registered')</script>";
 		echo "<script>window.open('adminPanel.php','_self')</script>";
+	}else{
+		echo "<script>alert('There is some Errors')</script>";
 	}
 }
 

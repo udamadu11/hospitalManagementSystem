@@ -34,13 +34,13 @@
 				<div class="card-body">
 					<form class="form-group" action="func.php" method="post">
 						<label>First Name :</label>
-						<input type="text" name="fname" class="form-control"><br>
+						<input type="text" name="fname" class="form-control" required><br>
 						<label>Last Name :</label>
-						<input type="text" name="lname" class="form-control"><br>
+						<input type="text" name="lname" class="form-control" required><br>
 						<label>Email :</label>
-						<input type="text" name="email" class="form-control"><br>
+						<input type="text" name="email" class="form-control" required><br>
 						<label>Contact :</label>
-						<input type="text" name="contact" class="form-control"><br>
+						<input type="text" name="contact" class="form-control" required><br>
 						<label>Doctor Appoitment :</label>
 						<select class="form-control" name="appoitment">
 							<option value="Dr AA From 6pm to 8pm">Dr AA From 4pm to 8pm</option>
