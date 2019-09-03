@@ -8,27 +8,27 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <body>
-<div class="jumbotron" style="background:url('../images/hospital.jpeg') no-repeat;background-size: cover;height: 250px;"></div>
+<div class="jumbotron" style="background:url('../images/ho.jpg') no-repeat;background-size: cover;height: 250px;"></div>
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-3">
 			<div class="list-group">
-				<a href="" class="list-group-item" style="background-color: #3498DB;color: #ffffff;">Pateints</a>
-				<a href="pateintDetails.php" class="list-group-item">pateint Details</a>
-				<a href="" class="list-group-item">Add New Pateint</a>
-				<a href="" class="list-group-item">Payment / Checkout</a>
+				<a href="" class="list-group-item" style="background-color: #052C34;color: #ffffff;">Pateints</a>
+				<a href="pateintDetails.php" class="list-group-item list-group-item-dark">pateint Details</a>
+				<a href="" class="list-group-item list-group-item-dark">Add New Pateint</a>
+				<a href="" class="list-group-item list-group-item-dark">Payment / Checkout</a>
 			</div>
 			<hr>
 			<div class="list-group">
-				<a href="" class="list-group-item" style="background-color: #3498DB;color: #ffffff;">Staff</a>
-				<a href="staffDetails.php" class="list-group-item">Staff Details</a>
-				<a href="addStaff.php" class="list-group-item">Add new Staff</a>
-				<a href="" class="list-group-item">Remove Staff Member</a>
+				<a href="" class="list-group-item list-group-item-dark" style="background-color: #052C34;color: #ffffff;">Staff</a>
+				<a href="staffDetails.php" class="list-group-item list-group-item-dark">Staff Details</a>
+				<a href="addStaff.php" class="list-group-item list-group-item-dark">Add new Staff</a>
+				<a href="" class="list-group-item list-group-item-dark">Remove Staff Member</a>
 			</div>
 		</div>
 		<div class="col-md-8">
 			<div class="card">
-				<div class="card-body" style="background-color: #3498DB;color: #ffffff;">
+				<div class="card-body" style="background-color: #052C34;color: #ffffff;">
 					<h3>Book An Appoitment</h3>
 				</div>
 				<div class="card-body">
@@ -46,7 +46,7 @@
 							<option value="Dr AA From 6pm to 8pm">Dr AA From 4pm to 8pm</option>
 							<option value="Dr BB From 4pm to 8pm">Dr BB From 4pm to 8pm</option>
 						</select><br>
-						<input type="submit"class="btn btn-primary" name="submit" value="Enter Appoitment">
+						<input type="submit"class="btn btn-dark" name="submit" value="Enter Appoitment">
 					</form>
 				</div>
 			</div>
@@ -60,7 +60,7 @@
         title: 'Welcome Back!!',
         text: 'Admin.....',
         imageUrl: '../images/me.jpg',
-        imageWidth: 400,
+        imageWidth: 200,
         imageHeight: 200,
         imageAlt: 'Custom image',
         animation: false
